@@ -1,0 +1,78 @@
+/* PRODUCT LIGHTBOX */
+.product__light_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.775);
+    z-index: 1010;
+}
+
+.product__lightbox_view {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.lightbox--previous,
+.lightbox--next {
+    padding: .4rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -3rem;
+    cursor: pointer;
+}
+
+.lightbox--previous:hover ,
+.lightbox--next:hover {
+    color: var(--orange);
+}
+
+.lightbox--previous span,
+.lightbox--next span {
+    font-size: 2rem;
+}
+
+.lightbox--previous {
+    left: -1.5rem;
+    rotate: -90deg;
+}
+
+.lightbox--next {
+    right: -1.5rem;
+    rotate: 90deg;
+}
+
+.lightbox--close-btn {
+    font-size: 1.6rem;
+    color: var(--grayish-blue);
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: -.6rem;
+}
+
+.lightbox--close-btn:hover {
+    color: var(--orange);
+}
+
+.productlb__thumbnail-view {
+    width: 28rem;
+    height: 28rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.productlb__thumbnail-view img {
+    width: 100%;
+    height: 100%;
+}
